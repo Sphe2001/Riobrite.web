@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { LuX } from "react-icons/lu";
 import QouteForm from "../common/qouteForm";
 

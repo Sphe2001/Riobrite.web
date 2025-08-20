@@ -1,5 +1,3 @@
-import React from "react";
-
 const jobs = [
   {
     id: 1,
