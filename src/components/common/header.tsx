@@ -9,7 +9,6 @@ type HeaderProps = {
 const Header = ({ onOpenQuote }: HeaderProps) => {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("");
-  const [quoteOpen, setQuoteOpen] = useState(false);
   const TABS = [
     { key: "", label: "Home" },
     { key: "about", label: "About Us" },
