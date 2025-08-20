@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { LuLaptop, LuArrowRight, LuX, LuMenu } from "react-icons/lu";
+import { LuArrowRight, LuX, LuMenu } from "react-icons/lu";
 import Logo from "../../assets/logo.png";
 
 type HeaderProps = {
@@ -9,7 +9,6 @@ type HeaderProps = {
 const Header = ({ onOpenQuote }: HeaderProps) => {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("");
-  const [quoteOpen, setQuoteOpen] = useState(false);
   const TABS = [
     { key: "", label: "Home" },
     { key: "about", label: "About Us" },
