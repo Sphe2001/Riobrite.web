@@ -1,4 +1,3 @@
-import React from "react";
 import { LuChevronRight } from "react-icons/lu";
 
 const blog = [
@@ -32,7 +31,7 @@ const BlogPage = () => {
                 {new Date(b.date).toLocaleDateString()}
               </p>
               <p className="font-semibold mt-1">{b.title}</p>
-              <button className="mt-3 inline-flex items-center gap-2 text-sm text-indigo-700">
+              <button className="mt-3 inline-flex items-center gap-2 text-sm text-yellow-150">
                 Read article <LuChevronRight className="h-4 w-4" />
               </button>
             </div>
