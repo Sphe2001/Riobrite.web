@@ -29,7 +29,7 @@ const CareersPage = () => {
               Grow with a company that values impact and integrity.
             </p>
           </div>
-          <a href="#" className="text-sm text-indigo-700">
+          <a href="#" className="text-sm text-yellow-150">
             Submit a general application
           </a>
         </div>

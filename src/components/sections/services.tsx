@@ -115,7 +115,9 @@ const ServicesSection = () => {
                 key={btn.k}
                 onClick={() => setFilter(btn.k)}
                 className={`px-3 py-2 rounded-xl text-sm border shadow-sm ${
-                  filter === btn.k ? "bg-indigo-600 text-white" : "bg-white"
+                  filter === btn.k
+                    ? "bg-yellow-100 text-white"
+                    : "bg-white hover:bg-yellow-50"
                 }`}
               >
                 {btn.l}
@@ -131,7 +133,7 @@ const ServicesSection = () => {
               className="rounded-2xl border bg-white p-6 shadow-sm"
             >
               <div className="flex items-center gap-2">
-                <group.icon className="h-5 w-5 text-indigo-600" />
+                <group.icon className="h-5 w-5 text-yellow-150" />
                 <p className="font-semibold">{group.title}</p>
               </div>
               <div className="mt-4 grid gap-3">
@@ -141,7 +143,7 @@ const ServicesSection = () => {
                     className="rounded-xl border p-4 hover:shadow"
                   >
                     <div className="flex items-start gap-3">
-                      <item.icon className="h-5 w-5 text-indigo-600" />
+                      <item.icon className="h-5 w-5 text-yellow-150" />
                       <div>
                         <p className="font-medium">{item.title}</p>
                         <p className="text-sm text-gray-600">{item.desc}</p>
@@ -150,7 +152,7 @@ const ServicesSection = () => {
                   </div>
                 ))}
               </div>
-              <button className="mt-4 inline-flex items-center gap-2 text-sm text-indigo-700">
+              <button className="mt-4 inline-flex items-center gap-2 text-sm text-yellow-150">
                 Read more <LuChevronRight className="h-4 w-4" />
               </button>
             </div>

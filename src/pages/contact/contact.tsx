@@ -23,15 +23,15 @@ const ContactUsPage = () => {
           </div>
           <div className="rounded-2xl border bg-white p-5 shadow-sm grid gap-3 h-max">
             <div className="flex items-center gap-2 text-gray-700">
-              <LuMapPin className="h-5 w-5 text-indigo-600" />
+              <LuMapPin className="h-5 w-5 text-yellow-150" />
               Pretoria, South Africa
             </div>
             <div className="flex items-center gap-2 text-gray-700">
-              <LuPhone className="h-5 w-5 text-indigo-600" />
+              <LuPhone className="h-5 w-5 text-yellow-150" />
               +27 (0) 00 000 0000
             </div>
             <div className="flex items-center gap-2 text-gray-700">
-              <LuMail className="h-5 w-5 text-indigo-600" />
+              <LuMail className="h-5 w-5 text-yellow-150" />
               info@riobrite.co.za
             </div>
             <div className="pt-3 border-t text-sm text-gray-600">
@@ -43,21 +43,21 @@ const ContactUsPage = () => {
                 href="#"
                 aria-label="LinkedIn"
               >
-                <LuLinkedin className="h-5 w-5" />
+                <LuLinkedin className="h-5 w-5 text-blue-100" />
               </a>
               <a
                 className="p-2 rounded-xl border hover:bg-gray-50"
                 href="#"
                 aria-label="Facebook"
               >
-                <LuFacebook className="h-5 w-5" />
+                <LuFacebook className="h-5 w-5 text-blue-100" />
               </a>
               <a
                 className="p-2 rounded-xl border hover:bg-gray-50"
                 href="#"
                 aria-label="Instagram"
               >
-                <LuInstagram className="h-5 w-5" />
+                <LuInstagram className="h-5 w-5 text-blue-100" />
               </a>
             </div>
           </div>

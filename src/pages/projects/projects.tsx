@@ -41,7 +41,7 @@ const ProjectsPage = () => {
               key={p.id}
               className="rounded-2xl border bg-white shadow-sm overflow-hidden"
             >
-              <div className="aspect-video bg-gradient-to-br from-indigo-100 to-indigo-50" />
+              <div className="aspect-video bg-gradient-to-br from-blue-100 to-blue-50" />
               <div className="p-5">
                 <div className="flex items-center justify-between">
                   <p className="font-semibold">{p.title}</p>
@@ -54,7 +54,7 @@ const ProjectsPage = () => {
                   {p.tags.map((t) => (
                     <span
                       key={t}
-                      className="text-xs rounded-full px-2 py-0.5 bg-indigo-50 text-indigo-700 border"
+                      className="text-xs rounded-full px-2 py-0.5 bg-yellow-50 text-yellow-150 border"
                     >
                       {t}
                     </span>

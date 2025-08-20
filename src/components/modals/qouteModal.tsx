@@ -16,7 +16,7 @@ const QouteModal = ({ open, onClose }: QuestModalProps) => {
     service: "IT Solutions",
     notes: "",
   });
-  if (!open) return null;
+  if (!open) return;
   return (
     <div className="fixed inset-0 z-[60] grid place-items-center p-4">
       <div className="absolute inset-0 bg-black/40" onClick={onClose} />
@@ -28,7 +28,7 @@ const QouteModal = ({ open, onClose }: QuestModalProps) => {
           </button>
         </div>
         <div className="p-5">
-          <QouteForm data={data} setData={setData} />
+          <QouteForm data={data} setData={setData} onClose={onClose} />
         </div>
       </div>
     </div>

@@ -45,7 +45,7 @@ function ContactUsForm() {
       />
       <button
         type="submit"
-        className="sm:col-span-2 rounded-2xl bg-indigo-600 px-5 py-3 text-white text-sm font-semibold shadow hover:bg-indigo-700"
+        className="sm:col-span-2 rounded-2xl bg-yellow-100 px-5 py-3 text-white text-sm font-semibold shadow hover:bg-yellow-150"
       >
         Send Message
       </button>
