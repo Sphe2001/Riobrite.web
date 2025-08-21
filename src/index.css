@@ -17,6 +17,10 @@ body {
     src: url("/fonts/general.woff2") format("woff2");
   }
   @font-face {
+    font-family: "space-gome";
+    src: url("/fonts/SpaceGomeRegular.woff2") format("woff2");
+  }
+  @font-face {
     font-family: "circular-web";
     src: url("/fonts/circularweb-book.woff2") format("woff2");
   }
@@ -28,6 +32,26 @@ body {
   @font-face {
     font-family: "robert-regular";
     src: url("/fonts/robert-regular.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "amped";
+    src: url("/fonts/Amped.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "darklinos";
+    src: url("/fonts/DARKLINOSRegular.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "dena";
+    src: url("/fonts/Dena-Regular.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "prophecy";
+    src: url("/fonts/TheInkProphecy.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "tigeroa";
+    src: url("/fonts/Tigeroa.woff2") format("woff2");
   }
 }
 
