@@ -4,7 +4,6 @@ import {
   LuTruck,
   LuUsers,
 } from "react-icons/lu";
-import ScrollStack, { ScrollStackItem } from "../common/scrollStackItem";
 
 const features = [
   {
