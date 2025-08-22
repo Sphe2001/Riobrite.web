@@ -4,6 +4,7 @@ import {
   LuTruck,
   LuUsers,
 } from "react-icons/lu";
+import ScrollStack, { ScrollStackItem } from "../common/scrollStackItem";
 
 const features = [
   {
@@ -29,22 +30,32 @@ const features = [
 ];
 const FeaturesSection = () => {
   return (
-    <section className="py-10 border-t bg-gradient-to-b from-white to-slate-50">
+    <section className="py-10 border-t border-gray-800 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {features.map((f) => (
             <div
               key={f.title}
-              className="rounded-2xl border bg-white p-5 shadow-sm"
+              className="bg-gradient-to-r from-transparent via-white/5 to-white/2 backdrop-blur-md rounded-2xl border border-white/10  p-5  "
             >
               <f.icon className="h-6 w-6 text-yellow-150" />
-              <p className="mt-3 font-semibold">{f.title}</p>
-              <p className="text-sm text-gray-600">{f.desc}</p>
+              <p className="mt-3 font-semibold text-white">{f.title}</p>
+              <p className="text-sm text-gray-400">{f.desc}</p>
             </div>
           ))}
         </div>
       </div>
     </section>
+    // <ScrollStack>
+    //   <ScrollStackItem itemClassName="">
+    //     <h2>Card 1</h2>
+    //     <p>This is the first card in the stack</p>
+    //   </ScrollStackItem>
+    //   <ScrollStackItem>
+    //     <h2>Card 2</h2>
+    //     <p>This is the second card in the stack</p>
+    //   </ScrollStackItem>
+    // </ScrollStack>
   );
 };
 

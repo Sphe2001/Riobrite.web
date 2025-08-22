@@ -1,4 +1,5 @@
 import { LuChevronRight } from "react-icons/lu";
+import BasicHero from "../../components/heroes/basicHero";
 
 const blog = [
   {
@@ -16,18 +17,18 @@ const blog = [
 const BlogPage = () => {
   return (
     <section className="py-14">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl font-extrabold mb-2">Blog & News</h2>
-        <p className="text-gray-600 mb-6">
+      <BasicHero imageSrc="/images/picNews2.jpg" heading="Blog & News" />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+        <div className="mb-5 font-general text-gray-300">
           Insights from technology, procurement and logistics.
-        </p>
+        </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {blog.map((b) => (
             <div
               key={b.id}
-              className="rounded-2xl border bg-white p-5 shadow-sm"
+              className="rounded-2xl border border-gray-800 bg-black p-5 shadow-sm"
             >
-              <p className="text-xs text-gray-500">
+              <p className="text-xs text-gray-300">
                 {new Date(b.date).toLocaleDateString()}
               </p>
               <p className="font-semibold mt-1">{b.title}</p>

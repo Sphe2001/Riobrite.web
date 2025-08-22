@@ -5,24 +5,34 @@ export default {
     extend: {
       fontFamily: {
         general: ["general", "sans-serif"],
-        "circular-web": ["circular-web", "sans-serif"],
-        "robert-medium": ["robert-medium", "sans-serif"],
-        "robert-regular": ["robert-regular", "sans-serif"],
+        circularWeb: ["circular-web", "sans-serif"],
+        robertMid: ["robert-medium", "sans-serif"],
+        robert: ["robert-regular", "sans-serif"],
+        space: ["space-gome", "sans-serif"],
+        amped: ["amped", "sans-serif"],
+        darklinos: ["darklinos", "sans-serif"],
+        dena: ["dena", "sans-serif"],
+        prophecy: ["prophecy", "sans-serif"],
+        tigeroa: ["tigeroa", "sans-serif"],
       },
       colors: {
         blue: {
           50: "#cdeaf7",
-          150: "#64c1e6ff",
-          100: "#0097d2",
+          150: "#344ceb",
+          100: "#0494D5",
+          175: "#0e1f96",
         },
         yellow: {
           50: "#faf3dc",
           150: "#d4a302",
-          100: "#f9c51c",
+          100: "#F59E0B",
+          175: "#a87808",
         },
+      },
+      morphism: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       },
     },
   },
   plugins: [],
-}
-
+};

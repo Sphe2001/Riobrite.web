@@ -33,67 +33,50 @@ function Card({ icon: Icon, title, desc }: CardProps) {
 const Hero = () => {
   return (
     <section className="relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-blue-50" />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative grid lg:grid-cols-2 gap-10 py-16 items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
-              Your Trusted Partner in{" "}
-              <span className="text-yellow-100">IT</span>, Supply & Delivery
-            </h1>
-            <p className="mt-4 text-gray-600 text-base sm:text-lg max-w-xl">
-              Riobrite Pty Ltd provides integrated technology solutions and
-              end‑to‑end procurement & logistics for Government and Private
-              Sector clients across South Africa.
-            </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <button className="rounded-2xl bg-white px-5 py-3 text-sm font-semibold shadow border">
-                Explore Services
-              </button>
-            </div>
-            <div className="mt-6 flex items-center gap-2 text-sm text-gray-600">
-              <LuCircleCheckBig className="h-5 w-5 text-green-600" /> Compliant
-              • BEE-aligned • Tender-ready
-            </div>
-          </motion.div>
+      <img
+        src="/images/pic1.jpg"
+        alt="Background"
+        className="absolute inset-0 h-full w-full sd:w-1/2 object-cover object-center"
+      />
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1, duration: 0.6 }}
-          >
-            <div className="aspect-video rounded-3xl bg-white border shadow grid place-content-center relative overflow-hidden">
-              <div className="absolute -right-10 -bottom-10 h-48 w-48 rounded-full bg-blue-50/60 blur-2xl" />
-              <div className="absolute -left-10 -top-10 h-48 w-48 rounded-full bg-blue-50/40 blur-2xl" />
-              <div className="relative z-10 p-6 grid sm:grid-cols-2 gap-4 text-sm">
-                <Card
-                  icon={LuCpu}
-                  title="IT Hardware"
-                  desc="Laptops, servers, peripherals"
-                />
-                <Card
-                  icon={LuNetwork}
-                  title="Networking"
-                  desc="LAN/WAN, Wi‑Fi, cabling"
-                />
-                <Card
-                  icon={LuLock}
-                  title="Security"
-                  desc="Endpoint, firewall, policies"
-                />
-                <Card
-                  icon={LuPackage}
-                  title="Supply & Delivery"
-                  desc="Stationery, furniture, electronics"
-                />
-              </div>
-            </div>
-          </motion.div>
-        </div>
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/50 to-black/40"></div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-32">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          className="max-w-2xl"
+        >
+          <h1 className="md:text-3xl sm:text-2xl lg:text-4xl font-space font-extrabold tracking-tight leading-tight text-gray-200">
+            Your Trusted Partner in <span className="text-yellow-100">IT</span>,
+            Supply & Delivery
+          </h1>
+          <p className=" hidden sm:block backdrop-blur-md bg-black/20 border border-black/20 rounded-lg shadow-md shadow-gray-900 p-5 mt-6 text-gray-300 text-lg sm:text-xl max-w-xl">
+            <strong className="text-yellow-100 font-amped text-sm">
+              Riobrite Pty Ltd
+            </strong>{" "}
+            provides integrated technology solutions and end-to-end procurement
+            & logistics for Government and Private Sector clients across South
+            Africa.
+          </p>
+
+          <div className="mt-8 flex flex-wrap gap-4">
+            <button className="rounded-2xl bg-yellow-100 text-white px-6 py-3 text-base font-semibold shadow-md hover:bg-yellow-175 transition">
+              Explore Services
+            </button>
+            <button className="rounded-2xl bg-black/70 px-6 py-3 text-base font-semibold shadow border border-gray-800 hover:bg-black/90 hover:text-yellow-100  transition">
+              Contact Us
+            </button>
+          </div>
+
+          <div className="mt-6 flex items-center gap-3 text-sm text-gray-300">
+            <LuCircleCheckBig className="h-5 w-5 text-blue-100" />
+            Compliant <span className="text-blue-100 text-xl">•</span>{" "}
+            BEE-aligned <span className="text-blue-100 text-xl">•</span>{" "}
+            Tender-ready
+          </div>
+        </motion.div>
       </div>
     </section>
   );

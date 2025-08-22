@@ -3,34 +3,34 @@ function ContactUsForm() {
     <form
       action="https://formspree.io/f/mvgqjgpp"
       method="POST"
-      className="grid sm:grid-cols-2 gap-4"
+      className="grid sm:grid-cols-2 gap-4 border border-gray-800 p-10 rounded-xl"
     >
       <input
         name="name"
         placeholder="Full name"
-        className="border rounded-xl px-4 py-3"
+        className="border border-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-150 focus:border-blue-150  rounded-xl px-4 py-3 bg-gray-900 text-gray-200"
         required
       />
       <input
         name="email"
         type="email"
         placeholder="Email"
-        className="border rounded-xl px-4 py-3"
+        className="border border-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-150 focus:border-blue-150 rounded-xl px-4 py-3 bg-gray-900 text-gray-200"
         required
       />
       <input
         name="phone"
         placeholder="Phone"
-        className="border rounded-xl px-4 py-3"
+        className="border border-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-150 focus:border-blue-150 rounded-xl px-4 py-3 bg-gray-900 text-gray-200"
       />
       <input
         name="company"
         placeholder="Company / Department"
-        className="border rounded-xl px-4 py-3"
+        className="border border-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-150 focus:border-blue-150 rounded-xl px-4 py-3 bg-gray-900 text-gray-200 "
       />
       <select
         name="service"
-        className="border rounded-xl px-4 py-3 sm:col-span-2"
+        className="border border-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-150 focus:border-blue-150 rounded-xl px-4 py-3 sm:col-span-2 bg-gray-900 text-gray-200"
       >
         <option>Service of Interest</option>
         <option>IT Solutions</option>
@@ -40,7 +40,7 @@ function ContactUsForm() {
       <textarea
         name="message"
         placeholder="Your message"
-        className="border rounded-xl px-4 py-3 sm:col-span-2"
+        className="border border-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-150 focus:border-blue-150 rounded-xl px-4 py-3 sm:col-span-2 bg-gray-900 text-gray-200"
         rows={5}
       />
       <button

@@ -7,14 +7,19 @@
 body {
   width: 100dvw;
   overflow-x: hidden;
-  background-color: #ffffff;
-  font-family: "General Sans", sans-serif;
+  background-color: #000000;
+  font-family: "general", sans-serif;
+  color: #ffffff;
 }
 
 @layer base {
   @font-face {
     font-family: "general";
     src: url("/fonts/general.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "space-gome";
+    src: url("/fonts/SpaceGomeRegular.woff2") format("woff2");
   }
   @font-face {
     font-family: "circular-web";
@@ -28,6 +33,26 @@ body {
   @font-face {
     font-family: "robert-regular";
     src: url("/fonts/robert-regular.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "amped";
+    src: url("/fonts/Amped.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "darklinos";
+    src: url("/fonts/DARKLINOSRegular.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "dena";
+    src: url("/fonts/Dena-Regular.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "prophecy";
+    src: url("/fonts/TheInkProphecy.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "tigeroa";
+    src: url("/fonts/Tigeroa.woff2") format("woff2");
   }
 }
 
