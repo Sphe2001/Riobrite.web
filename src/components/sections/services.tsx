@@ -96,10 +96,9 @@ const ServicesSection = () => {
   return (
     <section className="py-14">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-end justify-between gap-4 mb-6">
+        <div className="grid grid-cols-1 gap-4 mb-6 sm:flex sm:items-end sm:justify-between">
           <div>
-            <h2 className="text-2xl font-extrabold">Services</h2>
-            <p className="text-gray-600">
+            <p className="text-gray-300">
               Comprehensive solutions that connect technology with procurement
               and logistics.
             </p>
@@ -114,10 +113,10 @@ const ServicesSection = () => {
               <button
                 key={btn.k}
                 onClick={() => setFilter(btn.k)}
-                className={`px-3 py-2 rounded-xl text-sm border shadow-sm ${
+                className={`px-3 py-2 rounded-xl text-sm border border-gray-700 shadow-sm ${
                   filter === btn.k
-                    ? "bg-yellow-100 text-white"
-                    : "bg-white hover:bg-yellow-50"
+                    ? "bg-yellow-100 text-gray-900"
+                    : "bg-black hover:bg-gray-800 "
                 }`}
               >
                 {btn.l}
@@ -130,7 +129,7 @@ const ServicesSection = () => {
           {visible.map((group) => (
             <div
               key={group.key}
-              className="rounded-2xl border bg-white p-6 shadow-sm"
+              className="rounded-2xl border border-gray-800 bg-black/25 p-6 shadow-sm"
             >
               <div className="flex items-center gap-2">
                 <group.icon className="h-5 w-5 text-yellow-150" />
@@ -140,13 +139,13 @@ const ServicesSection = () => {
                 {group.items.map((item) => (
                   <div
                     key={item.title}
-                    className="rounded-xl border p-4 hover:shadow"
+                    className="rounded-xl border border-gray-800 p-4 hover:shadow"
                   >
                     <div className="flex items-start gap-3">
                       <item.icon className="h-5 w-5 text-yellow-150" />
                       <div>
                         <p className="font-medium">{item.title}</p>
-                        <p className="text-sm text-gray-600">{item.desc}</p>
+                        <p className="text-sm text-gray-300">{item.desc}</p>
                       </div>
                     </div>
                   </div>

@@ -1,10 +1,10 @@
 import AboutSection from "../../components/sections/about";
-import BasicHero from "../../components/heros/basicHero";
+import BasicHero from "../../components/heroes/basicHero";
 
 const AboutPage = () => {
   return (
     <>
-      <BasicHero />
+      <BasicHero heading={"About Us"} imageSrc={"/images/pic1.jpg"} />
       <AboutSection />
     </>
   );
