@@ -1,34 +1,5 @@
-import React from "react";
 import { motion } from "framer-motion";
-import {
-  LuCircleCheckBig,
-  LuCpu,
-  LuLock,
-  LuNetwork,
-  LuPackage,
-} from "react-icons/lu";
-
-type CardProps = {
-  icon: React.ComponentType<{ className?: string }>;
-  title: string;
-  desc: string;
-};
-
-function Card({ icon: Icon, title, desc }: CardProps) {
-  return (
-    <div className="rounded-2xl border p-4 shadow-sm bg-white">
-      <div className="flex items-start gap-3">
-        <div className="h-10 w-10 rounded-xl bg-yellow-50 text-yellow-150 grid place-content-center">
-          <Icon className="h-5 w-5" />
-        </div>
-        <div>
-          <p className="font-semibold">{title}</p>
-          <p className="text-sm text-gray-600">{desc}</p>
-        </div>
-      </div>
-    </div>
-  );
-}
+import { LuCircleCheckBig } from "react-icons/lu";
 
 const Hero = () => {
   return (
