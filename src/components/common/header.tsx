@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { LuArrowRight, LuX, LuMenu } from "react-icons/lu";
 import Logo from "../../assets/logo.png";
 
@@ -7,17 +7,21 @@ type HeaderProps = {
   onOpenQuote: () => void;
 };
 const Header = ({ onOpenQuote }: HeaderProps) => {
+  const location = useLocation();
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("");
   const TABS = [
-    { key: "", label: "Home" },
-    { key: "about", label: "About Us" },
-    { key: "services", label: "Services" },
-    { key: "projects", label: "Projects" },
-    { key: "careers", label: "Careers" },
-    { key: "blog", label: "Blog" },
-    { key: "contact", label: "Contact" },
+    { key: "/", label: "Home" },
+    { key: "/about", label: "About Us" },
+    { key: "/services", label: "Services" },
+    { key: "/projects", label: "Projects" },
+    { key: "/careers", label: "Careers" },
+    { key: "/blog", label: "Blog" },
+    { key: "/contact", label: "Contact" },
   ];
+  useEffect(() => {
+    setActive(location.pathname);
+  }, [location]);
 
   const handleOpen = () => {
     if (open) {
@@ -87,7 +91,7 @@ const Header = ({ onOpenQuote }: HeaderProps) => {
               className="md:hidden absolute top-full left-0 w-full bg-black/80 backdrop-blur-md border-b border-gray-800 shadow-lg z-40 px-2 pb-2"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="grid gap-1">
+              <div className="grid gap-1 backdrop-blur-md ">
                 {TABS.map((t) => (
                   <Link
                     key={t.key}
@@ -98,8 +102,8 @@ const Header = ({ onOpenQuote }: HeaderProps) => {
                     }}
                     className={`px-3 py-2 text-left text-sm font-medium transition ${
                       active === t.key
-                        ? " text-blue-100 border-b border-blue-100"
-                        : "text-gray-300 hover:text-blue-100"
+                        ? " text-blue-100 border-b border-blue-100 "
+                        : "text-gray-300 hover:text-blue-100 "
                     }`}
                   >
                     {t.label}

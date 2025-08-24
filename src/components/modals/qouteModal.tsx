@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { LuX } from "react-icons/lu";
-import QouteForm from "../common/qouteForm";
+import QouteForm from "./qouteForm";
 import Heading from "../common/heading";
 
 type QuestModalProps = {
@@ -20,8 +20,11 @@ const QouteModal = ({ open, onClose }: QuestModalProps) => {
   if (!open) return;
   return (
     <div className="fixed inset-0 z-[60] grid place-items-center p-4">
-      <div className="absolute inset-0 bg-black/40" onClick={onClose} />
-      <div className="relative w-full max-w-2xl rounded-3xl bg-black border border-gray-800 shadow-xl">
+      <div
+        className="absolute inset-0 backdrop-blur-sm bg-black/40"
+        onClick={onClose}
+      />
+      <div className="relative w-full max-w-2xl rounded-3xl backdrop-blur-md  bg-black/90 border border-gray-800 shadow-xl">
         <div className="flex items-center justify-between p-5 border-b border-gray-800">
           <Heading heading={"Request a Quote"} />
           <button

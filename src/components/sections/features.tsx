@@ -29,13 +29,13 @@ const features = [
 ];
 const FeaturesSection = () => {
   return (
-    <section className="py-10 border-t border-gray-800 ">
+    <section className="py-10  border-gray-800 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {features.map((f) => (
             <div
               key={f.title}
-              className="bg-gradient-to-r from-transparent via-white/5 to-white/2 backdrop-blur-md rounded-2xl border border-white/10  p-5  "
+              className="bg-gradient-to-r from-transparent via-blue-100/5 to-white/2 backdrop-blur-md rounded-2xl border border-white/10  p-5  "
             >
               <f.icon className="h-6 w-6 text-yellow-150" />
               <p className="mt-3 font-semibold text-white">{f.title}</p>

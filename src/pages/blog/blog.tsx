@@ -17,7 +17,7 @@ const blog = [
 const BlogPage = () => {
   return (
     <section className="py-14">
-      <BasicHero imageSrc="/images/picNews2.jpg" heading="Blog & News" />
+      <BasicHero imageSrc="/images/picNews.webp" heading="Blog & News" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
         <div className="mb-5 font-general text-gray-300">
           Insights from technology, procurement and logistics.

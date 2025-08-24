@@ -29,8 +29,8 @@ export default {
           175: "#a87808",
         },
       },
-      morphism: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      backgroundImage: {
+        "gradient-radial": "radial-gradient( var(--tw-gradient-stops))",
       },
     },
   },
