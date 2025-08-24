@@ -3,7 +3,12 @@ import { Outlet } from "react-router-dom";
 import Header from "./components/common/header";
 import Footer from "./components/common/footer";
 import QouteModal from "./components/modals/qouteModal";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { useGSAP } from "@gsap/react";
 
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, useGSAP);
 export default function Layout() {
   const [quoteOpen, setQuoteOpen] = useState(false);
   return (

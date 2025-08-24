@@ -8,7 +8,7 @@ const projects = [
     tags: ["Switching", "Wi‑Fi", "SLA"],
     blurb:
       "Upgraded switching and site-to-site links across 4 offices with 99.9% uptime.",
-    imageSrc: "/images/picServ.jpeg",
+    imageSrc: "/images/picServ.webp",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const projects = [
     tags: ["Hardware", "Security"],
     blurb:
       "Supply and roll-out of secured laptops with encrypted drives for clinicians.",
-    imageSrc: "/images/picLap2.jpg",
+    imageSrc: "/images/picLap.webp",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const projects = [
     tags: ["Supply", "Distribution"],
     blurb:
       "Quarterly stationery supply with on-demand last‑mile deliveries across districts.",
-    imageSrc: "/images/picSta2.jpg",
+    imageSrc: "/images/picSta.webp",
   },
 ];
 
@@ -42,7 +42,7 @@ const ProjectsPage = () => {
           {projects.map((p) => (
             <div
               key={p.id}
-              className="rounded-2xl border border-gray-800 bg-gradient-to-br from-transparent via-white/5 to-white/2 backdrop-blur-md shadow-sm overflow-hidden"
+              className="rounded-2xl border border-gray-800 bg-gradient-to-r from-transparent via-blue-100/5 to-white/2 backdrop-blur-md shadow-sm overflow-hidden"
             >
               <div className="relative aspect-video">
                 <img

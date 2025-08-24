@@ -1,3 +1,4 @@
+import { useState } from "react";
 import ContactUsForm from "../../components/common/contactUsForm";
 import {
   LuFacebook,
@@ -10,6 +11,14 @@ import {
 import Heading from "../../components/common/heading";
 
 const ContactUsPage = () => {
+  const [data, setData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    company: "",
+    service: "Service of Interest",
+    message: "",
+  });
   return (
     <div className="py-14">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -20,9 +29,9 @@ const ContactUsPage = () => {
               Let’s discuss your requirements—IT, supply, or end‑to‑end
               delivery.
             </p>
-            <ContactUsForm />
+            <ContactUsForm data={data} setData={setData} />
           </div>
-          <div className="rounded-2xl border border-gray-800 bg-gradient-to-r from-transparent via-white/5 to-white/2 backdrop-blur-md  p-5 shadow-sm grid gap-3 h-max">
+          <div className="rounded-2xl border border-gray-800 bg-gradient-to-r from-transparent via-blue-100/5 to-white/2 backdrop-blur-md  p-5 shadow-sm grid gap-3 h-max">
             <div className="flex items-center gap-2 text-gray-300">
               <LuMapPin className="h-5 w-5 text-yellow-150" />
               Pretoria, South Africa

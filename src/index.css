@@ -12,6 +12,30 @@ body {
   color: #ffffff;
 }
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #f59e0b #1a1a1a;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #f59e0b;
+  border-radius: 8px;
+  border: 2px solid #000000;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #f3b851;
+}
+
 @layer base {
   @font-face {
     font-family: "general";

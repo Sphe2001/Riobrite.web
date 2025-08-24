@@ -24,14 +24,14 @@ const AboutSection = () => {
               expertise to provide seamless, audit‑ready outcomes.
             </p>
             <div className="grid sm:grid-cols-2 gap-4 mt-6">
-              <div className="rounded-2xl border border-gray-800 p-5 bg-black/80 shadow-sm">
+              <div className="rounded-2xl border border-gray-800 p-5 bg-gradient-to-r from-transparent via-blue-100/5 to-white/2 backdrop-blur-md shadow-sm">
                 <p className="font-semibold mb-1">Mission</p>
                 <p className="text-sm text-gray-300">
                   Deliver reliable, value‑driven IT and supply solutions that
                   empower organisations to focus on their core mandate.
                 </p>
               </div>
-              <div className="rounded-2xl border p-5 border-gray-800 p-5 bg-black/80 shadow-sm">
+              <div className="rounded-2xl border p-5 border-gray-800 bg-gradient-to-r from-transparent via-blue-100/5 to-white/2 backdrop-blur-md shadow-sm">
                 <p className="font-semibold mb-1">Vision</p>
                 <p className="text-sm text-gray-300">
                   To be the preferred partner bridging technology, procurement,
@@ -39,7 +39,7 @@ const AboutSection = () => {
                 </p>
               </div>
             </div>
-            <div className="mt-6 rounded-2xl border p-5 border-gray-800 p-5 bg-black/80 shadow-sm">
+            <div className="mt-6 rounded-2xl border p-5 border-gray-800  bg-black/80 shadow-sm">
               <p className="font-semibold mb-1">Values</p>
               <ul className="text-sm text-gray-700 grid sm:grid-cols-2 gap-y-2 list-none pl-0">
                 <li className="flex items-center gap-2 text-gray-300">
@@ -61,7 +61,7 @@ const AboutSection = () => {
               </ul>
             </div>
           </div>
-          <div className="rounded-3xl border border-gray-800 p-5 bg-black/80 p-6 shadow-sm">
+          <div className="rounded-3xl border border-gray-800 p-5 bg-black/80  shadow-sm">
             <p className="text-sm text-gray-100">Director</p>
             <p className="text-xl font-bold">Mr. Masedi Matlala</p>
             <p className="text-sm text-gray-300 mt-1">

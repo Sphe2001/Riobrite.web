@@ -4,7 +4,7 @@ import BasicHero from "../../components/heroes/basicHero";
 const AboutPage = () => {
   return (
     <>
-      <BasicHero heading={"About Us"} imageSrc={"/images/pic1.jpg"} />
+      <BasicHero heading={"About Us"} imageSrc={"/images/pic6.webp"} />
       <AboutSection />
     </>
   );

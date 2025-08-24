@@ -139,10 +139,10 @@ const ServicesSection = () => {
                 {group.items.map((item) => (
                   <div
                     key={item.title}
-                    className="rounded-xl border border-gray-800 p-4 hover:shadow"
+                    className=" border border-gray-800 p-4 hover:shadow"
                   >
                     <div className="flex items-start gap-3">
-                      <item.icon className="h-5 w-5 text-yellow-150" />
+                      <item.icon className="h-5 w-5 text-blue-100 mt-1" />
                       <div>
                         <p className="font-medium">{item.title}</p>
                         <p className="text-sm text-gray-300">{item.desc}</p>
