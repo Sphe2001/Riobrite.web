@@ -24,7 +24,7 @@ const CareersPage = () => {
   return (
     <section className="py-14">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-end justify-between mb-4">
+        <div className="grid grid-cols-1 gap-4 mb-4 sm:flex sm:items-end sm:justify-between">
           <div>
             <Heading heading="Careers" />
             <p className="text-gray-300 font-general">
