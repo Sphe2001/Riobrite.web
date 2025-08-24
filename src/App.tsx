@@ -14,21 +14,63 @@ function App() {
   return (
     <TransitionProvider>
       <Routes>
-        <Route
-          path="/"
-          element={
-            <TransitionComponent>
-              <Layout />
-            </TransitionComponent>
-          }
-        >
-          <Route index element={<HomePage />} />
-          <Route path="about" element={<AboutPage />} />
-          <Route path="services" element={<ServicesPage />} />
-          <Route path="projects" element={<ProjectsPage />} />
-          <Route path="careers" element={<CareersPage />} />
-          <Route path="blog" element={<BlogPage />} />
-          <Route path="contact" element={<ContactUsPage />} />
+        <Route path="/" element={<Layout />}>
+          <Route
+            index
+            element={
+              <TransitionComponent>
+                <HomePage />
+              </TransitionComponent>
+            }
+          />
+          <Route
+            path="about"
+            element={
+              <TransitionComponent>
+                <AboutPage />
+              </TransitionComponent>
+            }
+          />
+          <Route
+            path="services"
+            element={
+              <TransitionComponent>
+                <ServicesPage />
+              </TransitionComponent>
+            }
+          />
+          <Route
+            path="projects"
+            element={
+              <TransitionComponent>
+                <ProjectsPage />
+              </TransitionComponent>
+            }
+          />
+          <Route
+            path="careers"
+            element={
+              <TransitionComponent>
+                <CareersPage />
+              </TransitionComponent>
+            }
+          />
+          <Route
+            path="blog"
+            element={
+              <TransitionComponent>
+                <BlogPage />
+              </TransitionComponent>
+            }
+          />
+          <Route
+            path="contact"
+            element={
+              <TransitionComponent>
+                <ContactUsPage />
+              </TransitionComponent>
+            }
+          />
         </Route>
       </Routes>
     </TransitionProvider>
